@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon"> 
+    <!-- <link rel="icon" href="images/fav.ico"> -->
+  <title></title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+    <nav>
+      <h2>The Feed'Istic</h2>
+    </nav>
+  </div>
+  </header>
+  <!-- Show case -->
+  <section class="showcase">
+    <div class="showcase-content">
+      <h1>The Feed'Istic, One stop solution to all your food search problems!</h1>
+      <p>
+        Know the best places to eat, at your finger tips.
+        select your favorite types to find the best list.
+      </p>
+      <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Select Type</button>
+        <div class="dropdown-content">
+        <a onclick="filterFeed()">Select Type</a>
+        <a onclick="filterFeed('Italian')">Italian</a>
+        <a onclick="filterFeed('Chinese')">Chinese</a>
+        <a onclick="filterFeed('Tacos')">Tacos</a>
+        <a onclick="filterFeed('Subway')">Subway</a>
+        <a onclick="filterFeed('Coffee')">Coffee</a>
+        <a onclick="filterFeed('Sushi')">Sushi</a>
+        <a onclick="filterFeed('Seafood')">Seafood</a>
+        <a onclick="filterFeed('Restaurant')">Restaurant</a>
+        <a onclick="filterFeed('Indian')">Indian</a>
+        <a onclick="filterFeed('Thai')">Thai</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about m-t">
+    <div class="container">
+      <h2 class="m-t">The Feed'Istic</h2>
+      <div class="container2">
+        <ul id="feed"></ul>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    <p>Copyright © since 2021 by Ghanashri M</p>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
