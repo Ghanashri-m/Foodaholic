@@ -13,7 +13,7 @@ function showPosition(position) {
         client_id: 'UDWWBD5OW4QJQTUQ0GMMS0LMVEFAHYZSURNJFNS5JGBV0KOO',
         client_secret: '4CIZMCOBJVMBEO0TLL1UCGA3F5DEZSZMUO5I4QEGY445KHBH',
         ll: `${position.coords.latitude},${position.coords.longitude}`,
-        radiud: '1000',
+        radius: '1000',
         v: '20180323',
         limit: 21,
     }
@@ -26,12 +26,10 @@ function showPosition(position) {
     });
 
     Promise.all(promises).then((results) => {
-        console.log(results);
         const feed = results.map((result, index) => ({
             [filters[index]]: result.response.venues,
         }));
         allFeedList = feed;
-        // displayFeed(feed);
     });
   }
 
